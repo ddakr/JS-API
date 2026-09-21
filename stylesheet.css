@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    background-image: url("248.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+#misto {
+    width: 16rem;
+    height: 2.8rem;
+    font-size: 1rem;
+    border: 3px solid black;
+    border-radius: 1em;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#misto::placeholder {
+    font-size: 1rem;
+}
+
+#submit{
+    width: 6rem;
+    height: 2.8rem;
+    font-size: 1rem;
+    border: 3px solid black;
+    border-radius: 1em;
+    margin-left: 1em;
+}
+
