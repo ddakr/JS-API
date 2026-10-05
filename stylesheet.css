@@ -16,9 +16,8 @@ body {
 }
 
 .menu{
-    display: flex;
-    justify-content: center;
-    align-items: end;
+   display: flex;
+    
 
 }
 #misto {
@@ -45,3 +44,19 @@ body {
     margin-left: 1em;
 }
 
+.intro{
+    background:transparent ;
+    padding: 0 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(165, 30, 30);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+   canvas{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:-1}
