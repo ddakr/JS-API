@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Auto na silnici – pozadí</title>
+<title>JS--API</title>
 <link rel="stylesheet" href="stylesheet.css">
 <style>
   html, body { margin: 0; height: 100%; }
@@ -20,16 +20,26 @@
         <h1>Vítejte na vyhledávači fotek</h1>
         <div class="menu">
             <form action="" id="vyhledavac">
-                <input type="text"placeholder="Napiš název místa:např:'Paříž'" id="misto">
-            </form>
-            <form action="">
-                <input type="submit" id="submit" value="Vyhledej">
-            </form>
+                <input type="text"placeholder="Napiš název místa:např:'Paříž'" id="misto" name="tlacitko">
+                <input type="submit" id="submit" value="Vyhledej" >  
+            </form>  
         </div>
-
-    </div>
 </main>
 
+<p id="zprava"></p>
+
+<table>
+  <tbody id="vysledky"></tbody>
+</table>
+
+<template id="sablona">
+  <tr>
+    <td><img></td>
+    <td class="nazev"></td>
+  </tr>
+</template>
+
+    </div>
 <script>
 (() => {
   const cv = document.getElementById('bg'), ctx = cv.getContext('2d');
@@ -145,5 +155,6 @@
   requestAnimationFrame(frame);
 })();
 </script>
+<script src="script.js"></script>
 </body>
 </html>

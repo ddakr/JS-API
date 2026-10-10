@@ -17,7 +17,7 @@ body {
 
 .menu{
    display: flex;
-    
+   margin-bottom: 7rem;
 
 }
 #misto {
