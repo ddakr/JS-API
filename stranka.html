@@ -17,29 +17,25 @@
 <canvas id="bg" aria-hidden="true"></canvas>
 <main>
     <div class="intro">   
-        <h1>Vítejte na vyhledávači fotek</h1>
+        <h1>Vítejte na vyhledávači aut</h1>
         <div class="menu">
             <form action="" id="vyhledavac">
-                <input type="text"placeholder="Napiš název místa:např:'Paříž'" id="misto" name="tlacitko">
+                <input type="text"placeholder="Napiš název auta:např:'BMW'" id="auto-vyhledavac" name="tlacitko">
                 <input type="submit" id="submit" value="Vyhledej" >  
             </form>  
         </div>
 </main>
-
 <p id="zprava"></p>
 
-<table>
-  <tbody id="vysledky"></tbody>
-</table>
+<div id="vysledky"></div>
 
 <template id="sablona">
-  <tr>
-    <td><img></td>
-    <td class="nazev"></td>
-  </tr>
+  <div class="karta">
+    <img>
+    <p class="nazev"></p>
+  </div>
 </template>
 
-    </div>
 <script>
 (() => {
   const cv = document.getElementById('bg'), ctx = cv.getContext('2d');

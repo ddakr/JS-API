@@ -5,22 +5,18 @@
 
 
 body {
-    background-image: url("248.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: column;
+    justify-content: column;
+    flex-direction: column;
 }
 
 .menu{
    display: flex;
-   margin-bottom: 7rem;
+   
 
 }
-#misto {
+#auto-vyhledavac {
     width: 16rem;
     height: 2.8rem;
     font-size: 1rem;
@@ -29,10 +25,6 @@ body {
     align-items: center;
     padding-left: 1em;
     padding-right: 1em;
-}
-
-#misto::placeholder {
-    font-size: 1rem;
 }
 
 #submit{
@@ -50,6 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+ 
 }
 
 h1{
@@ -60,3 +53,28 @@ h1{
 }
 
    canvas{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:-1}
+
+#vysledky {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem;
+  margin-left: 1rem;
+  
+}
+
+.karta img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 3px solid black;
+  border-color: rgb(44, 9, 9);
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nazev {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align: center;
+}
